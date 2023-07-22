@@ -32,10 +32,17 @@ except:
         except:
             st.title('Invalid method of entering points earned!')
 
-Total_Earn = sum(Points_float)
+Total_Lost = sum(Points_float)
+
+Total_Earn = Total - Total_Lost
 
 if Total == 0:
     st.write('Configure total points of assignment')
 else:
     st.write('''Fractional Grade:''', Total_Earn, '/', Total)
     st.write('Percentage Grade: ', round(Total_Earn/Total*100,2), '%')
+
+
+st.text('''Version 1.1
+1.1 Points entered are now the points that were lost rather than earned.
+1.0 Creation of app''')
