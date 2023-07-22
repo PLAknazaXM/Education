@@ -32,9 +32,17 @@ except:
         except:
             st.title('Invalid method of entering points earned!')
 
+EC = st.text_input('''Enter the points awarded through extra credit.
+Enter 0 if none''')
+
+try:
+    EC = float(EC)
+except:
+    EC = 0
+
 Total_Lost = sum(Points_float)
 
-Total_Earn = Total - Total_Lost
+Total_Earn = Total - Total_Lost + EC
 
 if Total == 0:
     st.write('Configure total points of assignment')
@@ -43,6 +51,7 @@ else:
     st.write('Percentage Grade: ', round(Total_Earn/Total*100,2), '%')
 
 
-st.text('''Version 1.1
+st.text('''Version 1.2
+1.0 Creation of app
 1.1 Points entered are now the points that were lost rather than earned.
-1.0 Creation of app''')
+1.2 Added extra credit option''')
