@@ -15,7 +15,7 @@ Total = st.number_input('Enter the total point value of the packet:')
 
 Points_float = (0,0)
 
-Earn = st.text_input('''Enter the number of points earned on each page, separated by commas, spaces, or dashes.
+Earn = st.text_input('''Enter the number of points lost on each page, separated by commas, spaces, or dashes.
 Ex: 1,5,13 OR 1 5 13 OR 1-5-13''')
 
 try:
