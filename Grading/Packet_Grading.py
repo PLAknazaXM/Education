@@ -11,7 +11,7 @@ st.title('Packet Grading Program')
 st.markdown('''This provides a quick and simple method to grade
 packets, providing fractional and percentage grades.''')
 
-Total = st.number_input('Enter the total point value of the packet:')
+Total = st.number_input('Enter the total point value of the packet:', step = 1)
 
 Points_float = (0,0)
 
