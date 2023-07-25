@@ -51,7 +51,8 @@ else:
     st.write('Percentage Grade: ', round(Total_Earn/Total*100,2), '%')
 
 
-st.text('''Version 1.2
+st.text('''Version 1.2.1
 1.0 Creation of app
 1.1 Points entered are now the points that were lost rather than earned.
-1.2 Added extra credit option''')
+1.2 Added extra credit option
+1.2.1 Adjusted point entry to integer if using the plus/minus buttons''')
